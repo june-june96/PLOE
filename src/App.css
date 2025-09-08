@@ -1,0 +1,848 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    width: 100%; height: auto;
+}
+
+.App {
+  font-family: 'BagelFat', sans-serif;
+}
+
+/* TopButton */
+.topButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #c69c6d;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  background: white; /* 원래 버튼 배경 없으면 추가 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.topButton:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------------- header ---------------- */
+/* HeaderTop */
+.headerTop {
+  width: 1070px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px; /* 원래 Container 역할 */
+}
+
+.headerLogo {
+  width: auto;
+  height: 60px;
+  cursor: pointer;
+}
+
+.searchBox {
+  position: relative;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.searchInput {
+  width: 100%;
+  border: 1px solid #C69C6D;
+  padding-right: 30px;
+  outline: none;
+  box-shadow: none;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  color: #C69C6D;
+  pointer-events: none;
+}
+
+.navMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.navMenuItem {
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+/* HeaderMenu */
+.headerMenu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+
+.menuList li{
+  width: 170px;
+  text-align: center;
+}
+.menuItem {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.menuItem:hover {
+  color: #C69C6D;
+}
+
+/* TopBanner */
+.topBanner {
+  background-color: #fae100;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* searchbox */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.app-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+/* Main Visual */
+.mainVisual {
+  width: 1070px;
+  margin-bottom: 70px;
+}
+
+/* Best 상품 섹션 */
+.bestTitle {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bestRow {
+  display: flex;
+  gap: 20px;
+}
+
+.bestCol {
+  flex: 1;
+}
+
+.thumbnail {
+  text-decoration: none;
+  color: black;
+}
+
+.thumbnail img {
+  width: 100%;
+  display: block;
+}
+
+.priceStrike {
+  text-decoration: line-through;
+  color: #ccc;
+  margin: 0;
+}
+
+.priceBold {
+  font-weight: bold;
+}
+
+.discountText {
+  margin-right: 8px;
+  color: #c69c6d;
+}
+
+/* Best 상품 */
+.productButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.productBtn {
+  flex: 1;
+  height: 45px;
+  background-color: #c69c6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+/* 찜하기 버튼 */
+.wishBtn {
+  margin-right: 5px; 
+}
+
+/* 장바구니 버튼 */
+.cartBtn {
+  margin-left: 5px;
+}
+
+/* subbanner */
+.subBanner {
+  width: 1070px;
+  margin: 70px auto;
+  display: block;
+}
+
+/* event */
+.eventSection {
+  height: 1350px;
+  border-radius: 30px;
+  background-color: #c69c6d;
+  padding-top: 20px;
+  text-align: center;
+}
+.eventSection p {
+  color: white;
+  font-size: 32px;
+}
+
+.eventSection img {
+  display: block;
+  margin: 15px auto;
+}
+
+/* introduce */
+.introduceSection {
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.introduceSection img {
+  width: 530px;
+  float: right;
+}
+
+.introduceSection p {
+  width: 530px;
+  height: 530px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.introduceSection p span {
+  color: #c69c6d;
+  font-weight: bold;
+}
+
+/* 서브배너 02 */
+.subBanner02 {
+  width: 1070px;
+  margin: 70px auto;
+  display: block;
+}
+
+/* best review */
+.reviewsSection {
+  margin-top: 40px;
+}
+
+.reviewsTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.reviewItem {
+  margin-bottom: 32px;
+}
+
+.reviewItemContent {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.reviewItemContent img {
+  width: 100%;
+  max-height: 290px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.reviewItemContent p {
+  margin-bottom: 8px;
+}
+
+.reviewItemContent .reviewTop {
+  font-weight: bold;
+}
+
+.reviewItemContent .reviewScore {
+  color: #666;
+}
+
+.reviewItemContent .reviewText {
+  color: #c69c6d;
+}
+
+
+/* ----------------------------------- */
+.App .bestbox{
+  border: 1px solid #ccc;
+}
+
+.App .thumbnail{
+  text-decoration: none;
+  color: black;
+}
+
+.App .desc{
+  font-size: 14px;
+}
+
+.App .price{
+  color: blue;
+  text-align: center;
+}
+
+.pagenation button:hover{
+  color: #c69c6d;
+}
+
+
+
+
+/* ------------------suubpage -------------------- */
+.productsWrapper {
+  padding: 20px;
+}
+
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.productCard {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px; /* 카드 높이 통일 */
+}
+
+.productLink {
+  text-decoration: none;
+  color: black;
+  flex-grow: 1;
+}
+
+.productImageWrapper {
+  height: 60%;
+  overflow: hidden;
+}
+
+.productImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.productText {
+  padding-top: 10px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productText p {
+  margin: 4px 0;
+}
+
+.productDesc {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.productPrice {
+  font-weight: bold;
+}
+
+.productDiscount {
+  color: #c69c6d;
+}
+
+.productButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.productButton {
+  flex: 1;
+  height: 45px;
+  background-color: #c69c6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.productButton + .productButton {
+  margin-left: 5px;
+}
+
+/* ---------- detailpage ------------ */
+/* 페이지 전체 */
+.detailsPage {
+  padding: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상품 이미지 & 정보 */
+.detailsHeader {
+  display: flex;
+  gap: 10px;
+}
+
+.detailsImage {
+  width: 530px;
+  border-radius: 8px;
+}
+
+.detailsInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+}
+
+.detailsTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.productDescWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productDesc {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.productDiscount {
+  font-weight: bold;
+  color: #c69c6d;
+}
+
+.productPrice {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 수량 조절 */
+.quantityBox {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantityBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c69c6d;
+  background-color: transparent;
+  color: #c69c6d;
+  cursor: pointer;
+}
+
+.quantityBtn.minus {
+  border-radius: 10px 0 0 10px;
+}
+
+.quantityBtn.plus {
+  border-radius: 0 10px 10px 0;
+}
+
+.quantityNum {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-top: 1px solid #c69c6d;
+  border-bottom: 1px solid #c69c6d;
+}
+
+/* 총 금액 */
+.totalPrice {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.totalAmount {
+  font-size: 40px;
+}
+
+/* 장바구니 버튼 */
+.addCartBtn {
+  width: 350px;
+  height: 80px;
+  border: 1px solid #c69c6d;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: #c69c6d;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 탭 메뉴 */
+.tabMenu {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.tabItem {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  width: 260px;
+}
+
+.tabItem.active {
+  border-bottom: 3px solid #c69c6d;
+  color: #c69c6d;
+  font-weight: bold;
+}
+
+/* 상세정보, 구매안내 */
+.tabContent {
+  margin-top: 50px;
+}
+
+.tabContent img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* 리뷰 */
+.reviewsSection h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 상단 만족도 박스 */
+.reviewSummary {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.reviewScoreBox {
+  text-align: center;
+  width: 350px;
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+.reviewScoreTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reviewScoreNumber {
+  font-size: 40px;
+  color: #c69c6d;
+}
+
+.writeReviewBtn {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  border: 1px solid #c69c6d;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 비율 막대 */
+.reviewBarBox {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.reviewBarRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewBarScore {
+  width: 30px;
+}
+
+.reviewBarWrap {
+  flex: 1;
+  height: 10px;
+  background: #eee;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.reviewBarFill {
+  height: 100%;
+  background: #c69c6d;
+  border-radius: 5px;
+}
+
+.reviewBarPercent {
+  width: 30px;
+}
+
+/* 포토리뷰 */
+.photoReviews {
+  margin-top: 40px;
+}
+
+.photoReviewsTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.photoReviewsGrid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.photoReviewCard {
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.photoReviewCard img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.photoReviewTitle span {
+  color: #c69c6d;
+}
+
+.photoReviewSub {
+  color: #888;
+}
+
+.photoReviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.photoReviewItem {
+  width: calc((100% - 20px) / 3); 
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* 글 리뷰 */
+.textReviewsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textReviewCard {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.reviewLeft {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reviewStars {
+  color: #c69c6d;
+  font-size: 20px;
+}
+
+.reviewName {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.reviewDate {
+  margin: 0;
+  color: #888;
+}
+
+.reviewRight {
+  flex: 1;
+}
+
+/* Q&A */
+.qnaTable {
+  margin-top: 20px;
+}
+
+.qnaHeader {
+  display: flex;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.qnaRow {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.qnaName {
+  width: 150px;
+}
+
+.qnaTitle {
+  flex: 1;
+}
+
+.qnaDate {
+  width: 120px;
+}
+
+
+/* ------------ cart -------------- */
+.cartButton {
+  flex: 1;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.cartWrapper {
+  position: relative;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #c69c6d;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+
+.order{
+  width: 250px; height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #c69c6d;
+  color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.order:hover{
+  background-color: transparent;
+  color: #c69c6d;
+  border: 1px solid #c69c6d;
+}

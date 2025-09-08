@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PLOE/static/css/main.c3dc82ca.css",
+    "main.js": "/PLOE/static/js/main.c9be7c64.js",
+    "static/js/453.672836a3.chunk.js": "/PLOE/static/js/453.672836a3.chunk.js",
+    "index.html": "/PLOE/index.html",
+    "main.c3dc82ca.css.map": "/PLOE/static/css/main.c3dc82ca.css.map",
+    "main.c9be7c64.js.map": "/PLOE/static/js/main.c9be7c64.js.map",
+    "453.672836a3.chunk.js.map": "/PLOE/static/js/453.672836a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3dc82ca.css",
+    "static/js/main.c9be7c64.js"
+  ]
+}
